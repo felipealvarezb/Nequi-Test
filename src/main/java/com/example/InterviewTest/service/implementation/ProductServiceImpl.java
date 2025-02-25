@@ -29,6 +29,12 @@ public class ProductServiceImpl implements ProductService {
   }
 
   @Override
+  public List<ProductResponseDTO> getProductsOrderedByBranchId(Long branchId) {
+    List<Product> products = productRepository.getProductsOrderedByStockDesc(branchId);
+    return productMapper.productsToProductResponseDTOs(products);
+  }
+
+  @Override
   public ProductResponseDTO getProductById(Long id) {
     Product existingProduct = productRepository.findById(id)
             .orElseThrow(() -> new EntityNotFoundException("Product not found"));
