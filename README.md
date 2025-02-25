@@ -20,6 +20,55 @@ El proyecto sigue una arquitectura por capas:
 A continuación, se muestra el modelo de entidad-relación del proyecto:
 <img width="1181" alt="Captura de pantalla 2025-02-25 a la(s) 5 07 28 p m" src="https://github.com/user-attachments/assets/3d088036-fc9b-44e3-8072-9575a17819cd" />
 
+
+## 🚀 Configuración del Proyecto
+
+## Requisitos previos
+
+Antes de desplegar la aplicación, asegúrate de tener instalado lo siguiente en tu sistema:
+
+1. **Java Development Kit (JDK) 21 o superior**  
+   [Descargar JDK](https://adoptium.net/)
+
+2. **Maven** (para compilar y ejecutar el proyecto)  
+   [Descargar Maven](https://maven.apache.org/download.cgi)
+
+3. **Docker y Docker Compose** (para la base de datos)  
+   [Instalar Docker](https://docs.docker.com/get-docker/)
+
+4. **Postman o cURL** (opcional, para probar los endpoints)
+
+---
+
+## Configuración inicial
+
+### 1. Clonar el repositorio
+Clona este repositorio en tu máquina local:
+
+```bash
+git clone https://github.com/felipealvarezb/Nequi-Test
+```
+### 2. Crear y ejecutar el contenedor de MySQL
+Descargar e iniciar un contenedor de MySql en el puerto 3306
+
+Credenciales por defecto:
+Usuario: user - Contraseña: password
+
+
+```bash
+docker-compose up -d
+docker ps 
+```
+### 3. Compilar el proyecto
+
+Para compilar el proyecto, ejecuta:
+
+```bash
+./mvnw clean install
+./mvnw spring-boot:run
+```
+
+
 ## 📜 API Endpoints
 
 Puedes probar los endpoints con Postman o Swagger (`http://localhost:8080/swagger-ui.html`).
