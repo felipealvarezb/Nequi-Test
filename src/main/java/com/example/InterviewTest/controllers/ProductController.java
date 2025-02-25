@@ -29,6 +29,12 @@ public class ProductController {
     return ResponseEntity.ok().body(product);
   }
 
+  @GetMapping("/branch/{branchId}")
+  public ResponseEntity<List<ProductResponseDTO>> getProductsByBranchId(@PathVariable Long branchId) {
+    List<ProductResponseDTO> products = productService.getProductsOrderedByBranchId(branchId);
+    return ResponseEntity.ok().body(products);
+  }
+
   @PostMapping
   public ResponseEntity<ProductResponseDTO> createProduct(@Validated @RequestBody ProductDTO product) {
     ProductResponseDTO createdProduct = productService.createProduct(product);
