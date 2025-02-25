@@ -10,6 +10,10 @@ El proyecto sigue una arquitectura por capas:
 - **Service**: Contiene la lógica de negocio.
 - **Repository**: Se encarga de la comunicación con la base de datos.
 - **Model**: Define las entidades del dominio.
+- **DTO**: Define los modelos para creación y actualización, como también para respuesta
+- **Mappers**: Define los mapeos de DTO's a entidades y de entidades a ResponseDTO's
+- **Exception**: Define las clases para el manejo de excepciones cunado se lanza un EntityNotFound o MethodArgumentNotValid
+  
 
 ### 📊 Modelo Entidad-Relación
 
