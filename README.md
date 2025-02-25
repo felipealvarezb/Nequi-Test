@@ -46,9 +46,9 @@ Algunos endpoints principales:
 
 - **Spring Boot 3**
 - **Spring Data JPA**
-- **MySQL 8**
+- **MySQL**
 - **Docker & Docker Compose**
-- **Swagger (Springdoc OpenAPI)**
+- **Lombok**
 
 ---
 
