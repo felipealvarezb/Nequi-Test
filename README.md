@@ -78,7 +78,9 @@ Para compilar el proyecto, ejecuta:
 
 ## 📜 API Endpoints
 
-Puedes probar los endpoints con Postman o Swagger (`http://localhost:8080/swagger-ui.html`).
+Puedes probar los endpoints con Postman de forma local (`http://localhost:8080/api/v1/**`).
+También puedes probar los endpoints con Postman al proyecto ya desplegado (`http://3.142.51.93:8080/api/v1/**`).
+
 
 Algunos endpoints principales:
 - **Franchise**:
