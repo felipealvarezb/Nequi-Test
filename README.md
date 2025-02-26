@@ -16,7 +16,11 @@ El proyecto sigue una arquitectura por capas:
 - **DTO**: Define los modelos para creación y actualización, como también para respuesta
 - **Mappers**: Define los mapeos de DTO's a entidades y de entidades a ResponseDTO's
 - **Exception**: Define las clases para el manejo de excepciones cunado se lanza un EntityNotFound o MethodArgumentNotValid
-  
+
+### 📊Diagrama de Arquitectura Desplegado
+<img width="1068" alt="Captura de pantalla 2025-02-26 a la(s) 6 25 12 p m" src="https://github.com/user-attachments/assets/8c925d53-39ac-487c-b2d3-308e9eb4394e" />
+
+
 
 ### 📊 Modelo Entidad-Relación
 
