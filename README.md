@@ -1,6 +1,9 @@
 # Nequi-Test
 
 Este es un proyecto desarrollado en **Spring Boot** con una arquitectura por capas. Utiliza **MySQL** como base de datos y está dockerizado para facilitar su despliegue.
+Este proyecto se encuentra desplegado en una instancia de EC2 en AWS. Se puede probar los endpoints en la instancia desplegada con la colección de postman que se encuentra
+en la carpeta postman
+
 
 ## 📌 Arquitectura
 
