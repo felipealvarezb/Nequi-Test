@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "c9b5c347-8a7d-4be7-82cd-046d9af5ae17",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32026386"
+	},
+	"item": [
+		{
+			"name": "Franchise",
+			"item": [
+				{
+					"name": "saveFranchise",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Burguer King\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://3.142.51.93:8080/api/v1/franchise"
+					},
+					"response": []
+				},
+				{
+					"name": "updateFranchise",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Burguer King\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://3.142.51.93:8080/api/v1/franchise/1"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllFranchises",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://3.142.51.93:8080/api/v1/franchise"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteFranchise",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://3.142.51.93:8080/api/v1/franchise/4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "saveProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Whopper doble\",\n  \"stock\": 350,\n  \"branchId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://3.142.51.93:8080/api/v1/product"
+					},
+					"response": []
+				},
+				{
+					"name": "updateProduct",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Megastacker doble\",\n  \"stock\": 250,\n  \"branchId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://3.142.51.93:8080/api/v1/product/2"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://3.142.51.93:8080/api/v1/product"
+					},
+					"response": []
+				},
+				{
+					"name": "getProductsOrderedByStock",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://3.142.51.93:8080/api/v1/product/branch/1"
+					},
+					"response": []
+				},
+				{
+					"name": "topProductsByStock",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://3.142.51.93:8080/api/v1/product/top-products/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Branch",
+			"item": [
+				{
+					"name": "saveBranch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sabaneta\",\n    \"franchiseId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://3.142.51.93:8080/api/v1/branch"
+					},
+					"response": []
+				},
+				{
+					"name": "updateBranch",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Medellin\",\n    \"franchiseId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://3.142.51.93:8080/api/v1/branch/1"
+					},
+					"response": []
+				},
+				{
+					"name": "getBranchById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://3.142.51.93:8080/api/v1/branch/1"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBranches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://3.142.51.93:8080/api/v1/branch"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
